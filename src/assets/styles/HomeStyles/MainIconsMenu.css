@@ -1,0 +1,38 @@
+.main__menu__items {
+  text-align: center;
+}
+
+.main__menu__items:hover {
+  border-bottom: 2px solid black;
+}
+
+.main__menu__items img {
+  width: 32px;
+  height: 32px;
+}
+
+.main__menu__items h6 {
+  font-size: 11px;
+  font-weight: bold;
+
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  color: black;
+}
+
+/*********************Responsive**********************/
+
+@media (max-width: 1113px){
+  .main__menu__items img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 930px) {
+  .main__menu__items img {
+    width: 24px;
+    height: 24px;
+  }
+}

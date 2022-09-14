@@ -1,0 +1,26 @@
+.main__description__modal {
+  width: 800px;
+}
+
+.modal__title {
+  width: 100%;
+  height: 5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__title h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.modal__content {
+  width: 100%;
+  height: 80%;
+}
+
+.modal__content p {
+  font-size: 15px;
+}

@@ -1,0 +1,33 @@
+.footer__home {
+  width: 100vw;
+  height: 40px;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #dddddd;
+}
+
+.footer__home__container {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__home__container a{
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+/***********************Responsive***********************/
+@media (max-width: 930px) {
+  .footer__home {
+    display: none;
+  }
+}
