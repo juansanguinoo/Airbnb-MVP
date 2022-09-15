@@ -1,0 +1,57 @@
+.footer__description__cards  {
+  width: 100vw;
+  height: 300px;
+  margin-top: 20px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+
+  background: #F7F7F7;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__description__cards__container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__description__content {
+  width: 30%;
+  height: 100%;
+}
+
+.footer__description__content__title {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__description__content__title h2 {
+  font-size: 15px;
+  font-weight: bold;
+
+  color: black;
+}
+
+.footer__description__content__list {
+  width: 100%;
+  height: 70%;
+
+  display: flex;
+}
+
+.footer__description__content__list li {
+  list-style: none;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+
