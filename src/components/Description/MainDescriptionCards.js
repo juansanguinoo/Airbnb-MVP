@@ -3,6 +3,7 @@ import "../../assets/styles/DescriptionStyles/MainDescriptionCards.css";
 
 import { Modal } from "@mantine/core";
 import { useState } from "react";
+
 import AsideDescriptionCards from "./AsideDescriptionCards";
 import MainDescriptionImages from "./MainDescriptionImages";
 import MainDescriptionModal from "./MainDescriptionModal";
@@ -59,7 +60,7 @@ const MainDescriptionCards = () => {
             <Modal
               opened={opened}
               onClose={() => setOpened(false)}
-              size={"medium"}
+              size={"small"}
             >
               {/* Modal content */}
               <MainDescriptionModal />
@@ -78,15 +79,12 @@ const MainDescriptionCards = () => {
         </div>
       </div>
 
-      <div className="description__ubication__map__container">
-        <div className="description__ubication__map">
-          <div className="description__ubication__map__title">
-            <h2>Where you´ll go</h2>
+      <div className="main__description__location">
+        <div className="main__description__location__container">
+          <div className="description__location">
+            <h2>Cayos Cochinos, Bay Islands Department, Honduras</h2>
           </div>
-          <div className="description__ubication__map__location">
-            <p>Cayos Cochinos, Bay Islands Department, Honduras</p>
-          </div>
-          <div className="description__ubication__map__map"></div>
+          <div className="description__map"></div>
         </div>
       </div>
     </main>
