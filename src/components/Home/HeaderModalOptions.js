@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "../../assets/styles/HomeStyles/HeaderModalOptions.css";
+import '../../assets/styles/HomeStyles/HeaderModalOptions.css';
 
 const HeaderModalOptions = () => {
   return (

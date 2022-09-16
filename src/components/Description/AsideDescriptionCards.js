@@ -1,5 +1,5 @@
-import React from "react";
-import "../../assets/styles/DescriptionStyles/AsideDescriptionCards.css";
+import React from 'react';
+import '../../assets/styles/DescriptionStyles/AsideDescriptionCards.css';
 
 const AsideDescriptionCards = () => {
   return (

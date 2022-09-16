@@ -1,5 +1,5 @@
-import React from "react";
-import "../../assets/styles/HomeStyles/MainCards.css";
+import React from 'react';
+import '../../assets/styles/HomeStyles/MainCards.css';
 
 const MainCards = ({ image, name, price }) => {
   return (

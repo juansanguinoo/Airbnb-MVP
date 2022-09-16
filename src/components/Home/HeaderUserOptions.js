@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import "../../assets/styles/HomeStyles/HeaderUserOptions.css";
+import '../../assets/styles/HomeStyles/HeaderUserOptions.css';
 
-import HeaderModalOptions from "./HeaderModalOptions";
+import HeaderModalOptions from './HeaderModalOptions';
 
-import { useState } from "react";
-import { Popover } from "@mantine/core";
+import { useState } from 'react';
+import { Popover } from '@mantine/core';
 
 const HeaderUserOptions = () => {
   const [opened, setOpened] = useState(false);
@@ -22,8 +22,7 @@ const HeaderUserOptions = () => {
           <Popover.Target>
             <div
               className="header__options__user__img"
-              onClick={() => setOpened(true)}
-            >
+              onClick={() => setOpened(true)}>
               <img
                 src="https://i.postimg.cc/6Q8gFq0S/user.png"
                 alt="User options"

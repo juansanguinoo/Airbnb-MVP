@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import "../../assets/styles/HomeStyles/HeaderHome.css";
+import '../../assets/styles/HomeStyles/HeaderHome.css';
 
-import HeaderUserOptions from "./HeaderUserOptions";
-import HeaderSearchBar from "./HeaderSearchBar";
+import HeaderUserOptions from './HeaderUserOptions';
+import HeaderSearchBar from './HeaderSearchBar';
 
 const HeaderHome = () => {
   return (

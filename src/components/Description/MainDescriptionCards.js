@@ -1,12 +1,12 @@
-import React from "react";
-import "../../assets/styles/DescriptionStyles/MainDescriptionCards.css";
+import React from 'react';
+import '../../assets/styles/DescriptionStyles/MainDescriptionCards.css';
 
-import { Modal } from "@mantine/core";
-import { useState } from "react";
+import { Modal } from '@mantine/core';
+import { useState } from 'react';
 
-import AsideDescriptionCards from "./AsideDescriptionCards";
-import MainDescriptionImages from "./MainDescriptionImages";
-import MainDescriptionModal from "./MainDescriptionModal";
+import AsideDescriptionCards from './AsideDescriptionCards';
+import MainDescriptionImages from './MainDescriptionImages';
+import MainDescriptionModal from './MainDescriptionModal';
 
 const MainDescriptionCards = () => {
   const [opened, setOpened] = useState(false);
@@ -60,14 +60,13 @@ const MainDescriptionCards = () => {
             <Modal
               opened={opened}
               onClose={() => setOpened(false)}
-              size={"small"}
-            >
+              size={'small'}>
               {/* Modal content */}
               <MainDescriptionModal />
             </Modal>
 
             <div className="host__information__modal">
-              <p>About this place</p>
+              <h2>About this place</h2>
 
               <div className="host__information__button">
                 <div onClick={() => setOpened(true)}>Watch more</div>
