@@ -1,8 +1,8 @@
-import React from "react";
-import "../../assets/styles/HomeStyles/MainHomeCards.css";
-import MainCards from "./MainCards";
+import React from 'react';
+import '../../assets/styles/HomeStyles/MainHomeCards.css';
+import MainCards from './MainCards';
 
-import { data } from "../../assets/Mockup/data";
+import { data } from '../../assets/Mockup/data';
 
 const MainHomeCards = () => {
   return (

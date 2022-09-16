@@ -1,5 +1,5 @@
-import React from "react";
-import "../../assets/styles/HomeStyles/MainIconsMenu.css";
+import React from 'react';
+import '../../assets/styles/HomeStyles/MainIconsMenu.css';
 
 const MainIconsMenu = ({ icon, text }) => {
   return (

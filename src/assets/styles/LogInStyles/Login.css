@@ -1,0 +1,140 @@
+.login__form__container {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(https://i.postimg.cc/k4vfnC92/thor-alvis-Loe7-Ma-HNz4c-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.login__form h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.login__form form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .username__password {
+  position: relative;
+  border-bottom: 2px solid #ddd;
+  margin: 30px 0;
+}
+
+.username__password input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.username__password label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.username__password span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.5s;
+  background-color: #ff385c;
+}
+
+.username__password input:focus ~ label,
+.username__password input:focus ~ label {
+  top: -5px;
+  color: #ff385c;
+}
+
+.username__password input:focus ~ span::before,
+.username__password input:focus ~ span::before {
+  width: 100%;
+}
+
+.password__restart {
+  margin: -5px 0 20px 5px;
+  color: blue;
+  cursor: pointer;
+}
+
+.password__restart:hover {
+  text-decoration: underline;
+}
+
+input[type='submit'] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background-color: #ff385c;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type='submit']:hover {
+  border-color: black;
+  transition: 0.5s;
+}
+
+.login__register {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+.login__register a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login__register a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .login__form {
+    width: 300px;
+  }
+
+  .login__form h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 330px) {
+  .login__form {
+    width: 90vw;
+  }
+}

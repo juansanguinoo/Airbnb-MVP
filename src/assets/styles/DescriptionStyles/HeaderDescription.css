@@ -38,8 +38,8 @@
   }
 }
 
-@media (max-width: 717px){
-  .header__description__logo{
+@media (max-width: 717px) {
+  .header__description__logo {
     display: none;
   }
 }

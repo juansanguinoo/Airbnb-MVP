@@ -1,10 +1,10 @@
-import React from "react";
-import "../../assets/styles/DescriptionStyles/MainDescriptionImages.css";
+import React from 'react';
+import '../../assets/styles/DescriptionStyles/MainDescriptionImages.css';
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-import { data } from "../../assets/Mockup/data";
+import { data } from '../../assets/Mockup/data';
 
 const responsive = {
   desktop: {

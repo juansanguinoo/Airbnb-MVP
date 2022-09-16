@@ -1,5 +1,5 @@
-import React from "react";
-import "../../assets/styles/DescriptionStyles/MainDescriptionModal.css";
+import React from 'react';
+import '../../assets/styles/DescriptionStyles/MainDescriptionModal.css';
 
 const MainDescriptionModal = () => {
   return (

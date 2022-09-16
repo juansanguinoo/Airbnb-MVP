@@ -1,7 +1,7 @@
-import React from "react";
-import "../../assets/styles/DescriptionStyles/FooterDescriptionCards.css";
+import React from 'react';
+import '../../assets/styles/DescriptionStyles/FooterDescriptionCards.css';
 
-import FooterHome from "../Home/FooterHome";
+import FooterHome from '../Home/FooterHome';
 
 const FooterDescriptionCards = () => {
   return (
@@ -16,8 +16,6 @@ const FooterDescriptionCards = () => {
               <li>Help center</li>
               <li>AirCover</li>
               <li>security information</li>
-              <li>Cancellation options</li>
-              <li>Report a problem</li>
             </ul>
           </div>
         </div>
@@ -29,6 +27,7 @@ const FooterDescriptionCards = () => {
             <ul>
               <li>Airbnb.org</li>
               <li>Support</li>
+              <li>Report a problem</li>
             </ul>
           </div>
         </div>
@@ -41,8 +40,6 @@ const FooterDescriptionCards = () => {
               <li>Share your space</li>
               <li>AirCover for host</li>
               <li>Means</li>
-              <li>Visit the community forum</li>
-              <li>How to provide host services</li>
             </ul>
           </div>
         </div>
@@ -55,7 +52,6 @@ const FooterDescriptionCards = () => {
               <li>Press conference</li>
               <li>More information</li>
               <li>Carrers</li>
-              <li>Investors</li>
             </ul>
           </div>
         </div>
