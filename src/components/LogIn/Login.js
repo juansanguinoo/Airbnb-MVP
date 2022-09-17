@@ -7,16 +7,18 @@ const Login = () => {
       <div className="login__form">
         <h1>Log in</h1>
         <form method="post">
-          <div className="username__password">
+          <div className="login__user">
             <input type="text" required></input>
             <label>Username</label>
           </div>
-          <div className="username__password">
+          <div className="login__user">
             <input type="password" required></input>
             <label>Password</label>
           </div>
           <div className="password__restart">Forgot your password?</div>
-          <input type="submit" value="Login"></input>
+          <div className="login__button">
+            <input type="submit" value="Login"></input>
+          </div>
           <div className="login__register">
             Don't have an account? <a href="/register">Register</a>
           </div>
