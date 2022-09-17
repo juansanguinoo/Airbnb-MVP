@@ -1,0 +1,74 @@
+.header__host {
+  width: 100vw;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header__host__container {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__host__logo {
+  width: 100px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__host__options {
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+}
+
+.header__host__menu {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__host__menu p {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__host__user {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__host__user__icon {
+  width: 50%;
+  height: 50%;
+  border-radius: 100px;
+
+  border: 1px solid gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.header__host__user__icon img {
+  width: 35px;
+  height: 35px;
+}

@@ -1,0 +1,22 @@
+.main__host__reservations {
+  width: 100vw;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.main__host__reservations h1 {
+  margin-left: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.reservations__list {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  background-color: #f7f7f7;
+}
