@@ -12,8 +12,8 @@ const MainHomeCards = () => {
           <MainCards
             key={card.id}
             name={card.name}
+            location={card.location}
             image={card.image}
-            dates={card.dates}
             price={card.price}
           />
         ))}
