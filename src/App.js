@@ -9,7 +9,7 @@ import Host from './pages/Host';
 function App() {
   return (
     <div>
-      <Host />
+      <Home />
     </div>
   );
 }

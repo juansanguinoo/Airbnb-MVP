@@ -28,7 +28,7 @@ const MainDescriptionImages = () => {
   return (
     <div className="main__description__images">
       <div className="images__carousel">
-        {/* <Carousel
+        <Carousel
           responsive={responsive}
           infinite={true}
           className="owl-carousel owl-theme skill-slider"
@@ -42,7 +42,7 @@ const MainDescriptionImages = () => {
               </div>
             )
           }
-        </Carousel> */}
+        </Carousel>
       </div>
     </div>
   );
