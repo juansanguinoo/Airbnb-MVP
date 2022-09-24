@@ -74,9 +74,11 @@ const MainMenu = () => {
   return (
     <div className="main__menu">
       <nav className="main__icons__menu">
-        {icons.map((icon) => (
+        {
+          icons.map((icon) => (
           <MainIconsMenu key={icon.id} icon={icon.icon} text={icon.text} />
-        ))}
+          ))
+        }
       </nav>
     </div>
   );

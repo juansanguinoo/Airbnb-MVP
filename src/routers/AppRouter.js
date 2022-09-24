@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LogIn from '../pages/LogIn';
 import Register from '../pages/Register';
@@ -13,7 +13,7 @@ const AppRouter = () => {
         <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default AppRouter
+export default AppRouter;

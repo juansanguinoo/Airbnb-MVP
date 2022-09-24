@@ -2,11 +2,11 @@ import React from 'react';
 import '../../assets/styles/HomeStyles/MainCards.css';
 import { Link } from 'react-router-dom';
 
-const MainCards = ({ image, name, price, location }) => {
+const MainCards = ({ id, image, name, price, location }) => {
   return (
     <div className="main__cards">
       <div className="main__cards__image">
-        <Link to={`/description-host/${name}`}>
+        <Link to={`/description-host?q=${id}`}>
           <img src={image} alt={name} />
         </Link>
       </div>
@@ -15,7 +15,7 @@ const MainCards = ({ image, name, price, location }) => {
           <h3>{location}</h3>
         </div>
         <div className="main__cards__description__price">
-          <Link to={`/description-host/${name}`}>{price}</Link>
+          <Link to={`/description-host?q=${id}`}>{price}</Link>
         </div>
       </div>
     </div>
