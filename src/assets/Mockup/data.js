@@ -3,6 +3,7 @@ export const data = [
     id: 1,
     name: '4BR Stunning Island in Blue Sea with Pool KALUA',
     location: 'Provincia de Cartagena, Bolívar, Colombia',
+    category: 'Island',
     image: 'https://i.postimg.cc/FRX8Wnbq/islands-1.png',
     price: '$11,043,796 COP night',
     url: [
@@ -16,8 +17,8 @@ export const data = [
     id: 2,
     name: 'Luxury Round Cay in Cayos Cochinos, Bay Islands',
     location: 'Cayos Cochinos, Bay Islands Department, Honduras',
+    category: 'Island',
     image: 'https://i.postimg.cc/q7ttYqF7/islands-2.png',
-    dates: 'Aug 21 - 26',
     price: '$15,115,818 COP night',
     url: [
       'https://i.postimg.cc/rp0fCK2v/50.png',
@@ -30,8 +31,8 @@ export const data = [
     id: 3,
     name: 'Therapy Cabin 2',
     location: 'Belize City, Belize',
+    category: 'Island',
     image: 'https://i.postimg.cc/gcDL7C01/islands-3.png',
-    dates: 'Aug 5 - 12',
     price: '$906,947 COP night',
     url: [
       'https://i.postimg.cc/RCJhGH50/therapy-cabin.png',
@@ -44,8 +45,8 @@ export const data = [
     id: 4,
     name: 'ISLA PRIVADA BARU',
     location: 'Provincia de Cartagena, Bolívar, Colombia',
+    category: 'Island',
     image: 'https://i.postimg.cc/SKfmspHh/islands-4.png',
-    dates: 'Aug 5 - 10',
     price: '$6,434,084 COP night',
     url: [
       'https://i.postimg.cc/bwVfKm1f/isla-privada-baru.png',
@@ -56,11 +57,11 @@ export const data = [
   },
   {
     id: 5,
-    name: 'Beach Cabana at Palmar Beach Lodge',
-    location: 'Bastimentos Island, Bocas del Toro Province, Panama',
-    image: 'https://i.postimg.cc/YSMwTs0y/islands-5.png',
-    dates: 'Aug 5 - 10',
-    price: '$674,000 COP night',
+    name: 'Ash Modern Cabin',
+    location: 'Reykjahlíð, Iceland',
+    category: 'Artic',
+    image: 'https://i.postimg.cc/QCbhTxY9/artic-1.png',
+    price: '$213,132 COP night',
     url: [
       'https://i.postimg.cc/7ZfWTwJj/beach-cabana-at-palamr.png',
       'https://i.postimg.cc/7ZfWTwJj/beach-cabana-at-palamr.png',
@@ -70,11 +71,11 @@ export const data = [
   },
   {
     id: 6,
-    name: 'Magnificent 6 bedroom house in the Rosary Islands',
-    location: 'Isla Grande, Colombia',
-    image: 'https://i.postimg.cc/C5Byjyrd/islands-6.png',
-    dates: 'Aug 5 - 11',
-    price: '$10,240,418 COP night',
+    name: 'Tiny House Cubo Nube Santa Elena 40 min. Medellin.',
+    location: 'Medellín, Antioquia, Colombia',
+    category: 'Tiny Home',
+    image: 'https://i.postimg.cc/Bvxy67Vt/tiny-home-1.png',
+    price: '$42,605 COP night',
     url: [
       'https://i.postimg.cc/W36WP4xq/magnificent-6-bedrooms.png',
       'https://i.postimg.cc/W36WP4xq/magnificent-6-bedrooms.png',
@@ -84,9 +85,10 @@ export const data = [
   },
   {
     id: 7,
-    name: 'Beautiful Oceanfront Cabana on Thatch Caye Including Meals and Drinks for 2!angriga, Belize',
-    location: 'Dangriga, Belize',
-    image: 'https://i.postimg.cc/L5Z7Jth1/islands-7.png',
+    name: 'Charming Villa @ Exclusive Private Club in Apulo',
+    location: 'Apulo, Cundinamarca, Colombia',
+    category: 'Amazing pools',
+    image: 'https://i.postimg.cc/yYcrnb7j/amazing-pools-1.png',
     dates: 'Aug 22 - 27',
     price: '$2,320,864 COP night',
     url: [
@@ -98,9 +100,10 @@ export const data = [
   },
   {
     id: 8,
-    name: 'Emerald Cay',
-    location: 'Providenciales, Caicos Islands, Turks & Caicos Islands',
-    image: 'https://i.postimg.cc/4yVgDk6q/islands-8.png',
+    name: 'Eco Dome Glamping Fatima Estate - Armenia',
+    location: 'Armenia, Quindío, Colombia',
+    category: 'Domes',
+    image: 'https://i.postimg.cc/d3MjyJZY/dome-1.png',
     dates: 'Aug 6 - 13',
     price: '$154,065,701 COP night',
     url: [

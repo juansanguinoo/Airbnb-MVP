@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import '../../assets/styles/DescriptionStyles/MainDescriptionCards.css';
 
 import { Modal } from '@mantine/core';
@@ -7,20 +7,30 @@ import { useState } from 'react';
 import AsideDescriptionCards from './AsideDescriptionCards';
 import MainDescriptionImages from './MainDescriptionImages';
 import MainDescriptionModal from './MainDescriptionModal';
+import { useParams } from 'react-router-dom';
+import { data } from '../../assets/Mockup/data';
 
 const MainDescriptionCards = () => {
   const [opened, setOpened] = useState(false);
+
+  const params = useParams();
+  console.log(params);
+  const hostName = useMemo(
+    () => data.filter((host) => host.name === params),
+    [params]
+  );
+  console.log(hostName);
 
   return (
     <main className="main__description__cards">
       <div className="main__description__host">
         <div className="main__host__name">
           <div className="host__name">
-            <h1>Cayo redondo de lujo en Cayos Cochinos, Islas de la Bahía</h1>
+            <h1>4BR Stunning Island in Blue Sea with Pool KALUAa</h1>
           </div>
 
           <div className="host__location">
-            <a href="/">Cayos Cochinos, Bay Islands Department, Honduras</a>
+            <a href="/">Provincia de Cartagena, Bolívar, Colombia</a>
           </div>
         </div>
 
@@ -61,7 +71,6 @@ const MainDescriptionCards = () => {
               opened={opened}
               onClose={() => setOpened(false)}
               size={'small'}>
-              {/* Modal content */}
               <MainDescriptionModal />
             </Modal>
 
@@ -81,7 +90,7 @@ const MainDescriptionCards = () => {
       <div className="main__description__location">
         <div className="main__description__location__container">
           <div className="description__location">
-            <h2>Cayos Cochinos, Bay Islands Department, Honduras</h2>
+            <h2>Provincia de Cartagena, Bolívar, Colombia</h2>
           </div>
           <div className="description__map"></div>
         </div>
