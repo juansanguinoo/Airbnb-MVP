@@ -4,8 +4,6 @@ import '../../assets/styles/DescriptionStyles/MainDescriptionImages.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import { data } from '../../assets/Mockup/data';
-
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -24,24 +22,20 @@ const responsive = {
   },
 };
 
-const MainDescriptionImages = () => {
+const MainDescriptionImages = ({ url, name }) => {
+  console.log(url);
   return (
     <div className="main__description__images">
       <div className="images__carousel">
         <Carousel
           responsive={responsive}
           infinite={true}
-          className="owl-carousel owl-theme skill-slider"
-        >
-          {
-            data.map(item => item.url)
-              .map((image, index) =>
-              <div
-                  key={index}>
-                <img src={image} alt={image} />
-              </div>
-            )
-          }
+          className="owl-carousel owl-theme skill-slider">
+          {url.map((image) => (
+            <div className="item">
+              <img src={image} alt={name} />
+            </div>
+          ))}
         </Carousel>
       </div>
     </div>

@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Popover } from '@mantine/core';
 
 const HeaderUserOptions = () => {
-  const [opened, setOpened] = useState(false);
+  const [setOpened] = useState(false);
 
   return (
     <div className="header__options__container">

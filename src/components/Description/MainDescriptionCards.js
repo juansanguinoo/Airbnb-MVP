@@ -1,40 +1,55 @@
-import React, { useMemo } from 'react';
 import '../../assets/styles/DescriptionStyles/MainDescriptionCards.css';
 
+import React, { useMemo } from 'react';
 import { Modal } from '@mantine/core';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { data } from '../../assets/Mockup/data';
+import queryString from 'query-string';
 
 import AsideDescriptionCards from './AsideDescriptionCards';
 import MainDescriptionImages from './MainDescriptionImages';
 import MainDescriptionModal from './MainDescriptionModal';
-import { useParams } from 'react-router-dom';
-import { data } from '../../assets/Mockup/data';
 
 const MainDescriptionCards = () => {
+
   const [opened, setOpened] = useState(false);
 
-  const params = useParams();
-  console.log(params);
-  const hostName = useMemo(
-    () => data.filter((host) => host.name === params),
-    [params]
-  );
-  console.log(hostName);
+  const params = useLocation();
+  const parsedDescription = queryString.parse(params.search);
+
+  const hostName = useMemo(() => data.filter((host) => host.id === parseInt(parsedDescription['q'])),[parsedDescription]);
 
   return (
     <main className="main__description__cards">
       <div className="main__description__host">
         <div className="main__host__name">
           <div className="host__name">
-            <h1>4BR Stunning Island in Blue Sea with Pool KALUAa</h1>
+            <h1>
+              {
+                hostName.map((host) => host.name)
+              }
+            </h1>
           </div>
 
           <div className="host__location">
-            <a href="/">Provincia de Cartagena, Bolívar, Colombia</a>
+            <div>
+              {
+                hostName.map((host) => host.location)
+              }
+            </div>
           </div>
         </div>
 
-        <MainDescriptionImages />
+        {
+          hostName.map((host) => (
+          <MainDescriptionImages
+            key={host.id}
+            url={host.url}
+            name={host.name}
+          />
+          ))
+        }
 
         <div className="main__description__content">
           <div className="content__host__information">
@@ -83,14 +98,24 @@ const MainDescriptionCards = () => {
             </div>
           </div>
 
-          <AsideDescriptionCards />
+          {
+            hostName.map((host) => (
+              <AsideDescriptionCards
+                key={host.id}
+                price={host.price} />
+            ))
+          }
         </div>
       </div>
 
       <div className="main__description__location">
         <div className="main__description__location__container">
           <div className="description__location">
-            <h2>Provincia de Cartagena, Bolívar, Colombia</h2>
+            <h2>
+              {
+                hostName.map((host) => host.location)
+              }
+            </h2>
           </div>
           <div className="description__map"></div>
         </div>

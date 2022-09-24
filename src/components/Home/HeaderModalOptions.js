@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../../assets/styles/HomeStyles/HeaderModalOptions.css';
 
@@ -7,14 +8,12 @@ const HeaderModalOptions = () => {
     <div className="header__modal__options">
       <div className="header__modal__user__options">
         <ul>
-          {/* <li><Link to="/register">Register</Link></li> */}
           <li>
-            <a href="/#">Register</a>
+            <Link to="/register">Register</Link>
           </li>
           <li>
-            <a href="/#">Log In</a>
+            <Link to="/login">Log in</Link>
           </li>
-          {/* <li><Link to="/login">Log in</Link></li> */}
         </ul>
       </div>
       <div className="header__modal__user__options">
