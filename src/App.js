@@ -1,10 +1,14 @@
 import './App.css';
+import AuthState from './context/auth/authState';
 import AppRouter from './routers/AppRouter';
 
 function App() {
   return (
     <div>
-      <AppRouter />
+      <AuthState>
+        <AppRouter />
+      </AuthState>
+      
     </div>
   );
 }
