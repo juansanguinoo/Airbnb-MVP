@@ -123,6 +123,12 @@ form .login__user {
   text-decoration: underline;
 }
 
+.error__login p{
+  color: red;
+  font-size: 14px;
+  margin: 0 0 0 5px;
+}
+
 @media (max-width: 500px) {
   .login__form {
     width: 300px;
