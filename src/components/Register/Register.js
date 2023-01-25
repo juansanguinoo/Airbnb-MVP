@@ -1,40 +1,41 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../../assets/styles/RegisterStyles/Register.css';
+import authContext from '../../context/auth/authContext';
 
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import Alert from '../Alert/Alert';
 
 const Register = () => {
-  
+  const AuthContext = useContext(authContext);
+  const { message, registerUser } = AuthContext;
+
   const formik = useFormik({
     initialValues: {
       username: '',
       email: '',
-      password: ''
+      password: '',
     },
     validationSchema: Yup.object({
-      username: Yup.string()
-        .required('Name is required'),
+      username: Yup.string().required('Name is required'),
       email: Yup.string()
         .email('Invalid email address')
         .required('Email is required'),
       password: Yup.string()
         .min(8, 'Must be at least 8 characters')
-        .required('Password is required')
+        .required('Password is required'),
     }),
-    onSubmit: (values) => {
-      console.log(values)
-    }
-  })
-  
+    onSubmit: (data) => {
+      registerUser(data);
+    },
+  });
 
   return (
     <div className="register__form__container">
       <div className="register__form">
         <h1>Register</h1>
-        <form
-          onSubmit={formik.handleSubmit}
-        >
+        {message ? <Alert /> : null}
+        <form onSubmit={formik.handleSubmit}>
           <div className="register__user">
             <input
               type="text"
@@ -44,13 +45,11 @@ const Register = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {
-              formik.touched.username && formik.errors.username ?
-              <div className='error__register'>
+            {formik.touched.username && formik.errors.username ? (
+              <div className="error__register">
                 <p>{formik.errors.username}</p>
               </div>
-              : null
-            }
+            ) : null}
             <label>Username</label>
           </div>
           <div className="register__user">
@@ -62,13 +61,11 @@ const Register = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {
-              formik.touched.email && formik.errors.email ?
-              <div className='error__register'>
+            {formik.touched.email && formik.errors.email ? (
+              <div className="error__register">
                 <p>{formik.errors.email}</p>
               </div>
-              : null
-            }
+            ) : null}
             <label>Email</label>
           </div>
           <div className="register__user">
@@ -80,13 +77,11 @@ const Register = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {
-              formik.touched.password && formik.errors.password ?
-              <div className='error__register'>
+            {formik.touched.password && formik.errors.password ? (
+              <div className="error__register">
                 <p>{formik.errors.password}</p>
               </div>
-              : null
-            }
+            ) : null}
             <label>Password</label>
           </div>
           <div className="register__user__button">

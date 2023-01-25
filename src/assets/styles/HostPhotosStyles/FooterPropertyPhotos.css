@@ -1,0 +1,103 @@
+.footer__propertyphotos {
+  width: 100vw;
+  height: 100px;
+
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rigthbutton__container {
+  width: 50%;
+  height: 100%;
+
+  background: rgb(66, 42, 157);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 42, 157, 1) 0%,
+    rgba(121, 30, 163, 1) 35%,
+    rgba(205, 36, 124, 1) 100%
+  );
+}
+
+.button-back {
+  width: 200px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-back button {
+  width: 100px;
+  height: 40px;
+
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button-back button:hover {
+  color: #000;
+}
+
+.leftbutton__container {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-next {
+  width: 200px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-next button {
+  width: 150px;
+  height: 50px;
+
+  background-color: #222;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-next button:hover {
+  background-color: #000;
+}
+
+/***************** Media queries *****************/
+
+@media (max-width: 400px) {
+  .button-back {
+    width: 40px;
+  }
+
+  .button-back button {
+    width: 100%;
+  }
+
+  .button-next {
+    width: 40px;
+  }
+
+  .button-next button {
+    width: 100%;
+  }
+}
