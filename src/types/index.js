@@ -1,0 +1,30 @@
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_ERROR = 'REGISTER_ERROR';
+
+export const CLEAN_ALERT = 'CLEAN_ALERT';
+
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_ERROR = 'LOGIN_ERROR';
+
+export const AUTHENTICATED_USER = 'AUTHENTICATED_USER';
+
+export const LOGOUT = 'LOGOUT';
+
+export const LOAD_LOCAL_DATA = 'LOAD_LOCAL_DATA';
+export const CLEAR_DATA = 'CLEAR_DATA';
+export const SELECT_TYPE_GROUP = 'SELECT_TYPE_GROUP';
+export const SELECT_PRIVACY_TYPE = 'SELECT_PRIVACY_TYPE';
+export const SELECT_LOCATION = 'SELECT_LOCATION';
+export const SELECT_FLOOR_PLAN = 'SELECT_FLOOR_PLAN';
+
+export const ADD_PHOTOS = 'ADD_PHOTOS';
+export const ADD_TITLE = 'ADD_TITLE';
+export const ADD_DESCRIPTION = 'ADD_DESCRIPTION';
+export const ADD_PRICE = 'ADD_PRICE';
+
+export const CREATE_HOST = 'CREATE_HOST';
+export const GET_ALL_HOST = 'GET_ALL_HOST';
+export const GET_HOST_BY_ID = 'GET_HOST_BY_ID';
+
+export const CREATE_PAYMENT = 'CREATE_PAYMENT';
+export const GET_PAYMENTS_BY_USER_ID = 'GET_PAYMENTS_BY_USER_ID';

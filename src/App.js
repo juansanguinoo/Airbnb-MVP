@@ -1,14 +1,20 @@
+import React from 'react';
 import './App.css';
 import AuthState from './context/auth/authState';
+import HostState from './context/host/hostState';
+import PaymentState from './context/payment/paymentState';
 import AppRouter from './routers/AppRouter';
 
 function App() {
   return (
     <div>
       <AuthState>
-        <AppRouter />
+        <HostState>
+          <PaymentState>
+            <AppRouter />
+          </PaymentState>
+        </HostState>
       </AuthState>
-      
     </div>
   );
 }

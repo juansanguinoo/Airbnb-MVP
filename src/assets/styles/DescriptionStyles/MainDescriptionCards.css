@@ -1,4 +1,4 @@
-.main__description__cards {
+.description__cards {
   width: 100vw;
 
   display: flex;
@@ -6,242 +6,183 @@
   align-items: center;
 }
 
-.main__description__host {
+.description__host {
   width: 70%;
 }
 
 /**************************Cards**************************/
 
-.main__host__name {
+.host__name {
   width: 100%;
   height: 100px;
 }
 
-.host__name {
+.name {
   width: 100%;
   height: 70px;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
-.host__name h1 {
-  font-size: 25px;
+.name h1 {
+  font-size: 24px;
   font-weight: bold;
-  color: black;
+  color: #000;
 }
 
 .host__location {
   width: 100%;
   height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.host__location a {
-  font-size: 15px;
+.host__location p {
+  font-size: 16px;
   color: black;
-  text-decoration: none;
+  font-weight: bold;
 }
 
 /**********************Cards Description***********************/
 
-.main__description__content {
+.description__content {
   width: 100%;
   margin-top: 30px;
 
   display: flex;
 }
 
-.content__host__information {
+.content__information {
   width: 65%;
-}
-
-.anfitrion__information {
-  width: 90%;
-  height: 50px;
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  border-bottom: 2px solid #ccc;
-}
-
-.anfitrion__information h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
 }
 
 /**********************Information***********************/
 
-.host__information {
-  width: 90%;
-  height: 130px;
-
-  margin-top: 30px;
-
-  border-bottom: 2px solid #ccc;
-}
-
 .information {
   width: 100%;
+  height: 100px;
+
+  margin-top: 10px;
+
+  border-bottom: 1px solid #ccc;
+}
+
+.information-elements {
+  width: 100%;
   height: 30px;
-  margin-top: 7px;
 
   display: flex;
   align-items: center;
-}
-
-.information h2 {
-  margin-left: 15px;
-  font-size: 14px;
-
-  color: black;
-}
-
-/*******************************Text Description***************************/
-
-.host__information__text {
-  width: 90%;
-  height: 110px;
-
-  margin-top: 5px;
-
-  border-bottom: 2px solid #ccc;
-
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.host__information__text p {
-  font-size: 15px;
+.information-elements p {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
 }
 
 /********************************About this place********************************/
 
-.host__information__modal {
-  width: 90%;
-  height: 110px;
-
-  border-bottom: 2px solid #ccc;
+.information__description {
+  width: 100%;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.host__information__modal p {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.host__information__button {
-  width: 100%;
-  height: 30px;
-
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-}
-
-.host__information__button div {
-  font-size: 15px;
-  text-decoration: underline;
-  cursor: pointer;
-
-  color: black;
-}
-
-/*****************************Map*****************************/
-
-.main__description__location {
-  width: 100vw;
-  height: 450px;
-
-  display: flex;
   justify-content: center;
 }
 
-.main__description__location__container {
-  width: 70%;
-  height: 100%;
-}
-
-.description__location {
-  width: 100%;
-  height: 20%;
+.description__text {
+  width: 90%;
+  height: 70px;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.description__location h2 {
-  font-size: 15px;
-
-  color: black;
+.description__text p {
+  font-size: 16px;
+  color: #000;
 }
 
-.description__map {
-  width: 100%;
-  height: 80%;
+.description-about {
+  width: 90%;
 
-  background: sienna;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*******************************Responsive*****************************/
+.description-about p {
+  font-size: 16px;
+  color: #000;
+}
 
-@media (max-width: 1000px) {
-  .main__description__host {
-    width: 90%;
+/************************** Media Queries **************************/
+
+@media (max-width: 1050px) {
+  .description__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .main__description__location__container {
+  .content__information {
     width: 90%;
   }
 }
 
-@media (max-width: 800px) {
-  .host__name h1 {
-    font-size: 20px;
+@media (max-width: 850px) {
+  .name h1 {
+    font-size: 18px;
   }
 
-  .anfitrion__information h2 {
-    font-size: 15px;
+  .host__location p {
+    font-size: 14px;
   }
 
-  .information h2 {
-    font-size: 12px;
+  .information-elements p {
+    font-size: 14px;
   }
 
-  .host__information__text p {
-    font-size: 12px;
-  }
-
-  .host__information__button div {
-    font-size: 12px;
-  }
-
-  .host__information__modal h2 {
-    font-size: 15px;
+  .description-about p {
+    font-size: 14px;
   }
 }
 
-@media (max-width: 600px) {
-  .host__name h1 {
-    font-size: 15px;
+@media screen and (max-width: 550px) {
+  .description__host {
+    width: 90%;
   }
 
-  .host__location a {
-    font-size: 12px;
-  }
-
-  .main__description__content {
-    display: block;
-  }
-  .content__host__information {
+  .content__information {
     width: 100%;
+  }
+
+  .name h1 {
+    font-size: 16px;
+  }
+
+  .host__location p {
+    font-size: 12px;
+  }
+
+  .information-elements p {
+    font-size: 12px;
+  }
+
+  .description__text h2 {
+    font-size: 16px;
+  }
+
+  .description-about p {
+    font-size: 12px;
   }
 }

@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
 
-  background-image: url(https://i.postimg.cc/k4vfnC92/thor-alvis-Loe7-Ma-HNz4c-unsplash.jpg);
+  background-image: url(https://i.postimg.cc/nhVWBFwQ/unsplash-d-BOZ7-XL4b-E.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,28 +58,6 @@ form .login__user {
   transition: 0.5s;
 }
 
-.login__user span::before {
-  content: '';
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  transition: 0.5s;
-  background-color: #ff385c;
-}
-
-.login__user input:focus ~ label,
-.login__user input:focus ~ label {
-  top: -5px;
-  color: #ff385c;
-}
-
-.login__user input:focus ~ span::before,
-.login__user input:focus ~ span::before {
-  width: 100%;
-}
-
 .password__restart {
   margin: -5px 0 20px 5px;
   color: blue;
@@ -123,7 +101,7 @@ form .login__user {
   text-decoration: underline;
 }
 
-.error__login p{
+.error__login p {
   color: red;
   font-size: 14px;
   margin: 0 0 0 5px;

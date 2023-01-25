@@ -1,0 +1,129 @@
+.propertylocation__container {
+  width: 100vw;
+  height: auto;
+
+  display: flex;
+}
+
+.propertylocation__title {
+  width: 50%;
+  height: calc(100vh - 180px);
+
+  background: rgb(66, 42, 157);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 42, 157, 1) 0%,
+    rgba(121, 30, 163, 1) 35%,
+    rgba(205, 36, 124, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.propertylocation__title h1 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.propertylocation__form {
+  width: 50%;
+  height: calc(100vh - 180px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__container {
+  width: 90%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location__input {
+  width: 400px;
+  height: 60px;
+
+  margin-top: 10px;
+}
+
+.location__input input {
+  width: 95%;
+  height: 50%;
+  padding: 10px;
+
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+}
+
+.location__input input[type='submit'] {
+  width: 100%;
+  height: 70%;
+
+  background-color: #bc2283;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+}
+
+.location__input input:focus {
+  border: 1px solid black;
+}
+
+.input__error {
+  width: 200px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+}
+
+.input__error p {
+  color: #000;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.loading__container {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+}
+
+/************************* Media Queries *************************/
+
+@media screen and (max-width: 800px) {
+  .propertylocation__title {
+    display: none;
+  }
+
+  .propertylocation__form {
+    width: 100%;
+  }
+
+  .form__container {
+    width: 90%;
+    height: 100%;
+  }
+
+  .location__input {
+    width: 100%;
+    height: 90px;
+
+    margin-top: 10px;
+  }
+}

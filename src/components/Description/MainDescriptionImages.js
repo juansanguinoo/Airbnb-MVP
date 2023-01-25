@@ -22,8 +22,7 @@ const responsive = {
   },
 };
 
-const MainDescriptionImages = ({ url, name }) => {
-  console.log(url);
+const MainDescriptionImages = (photos) => {
   return (
     <div className="main__description__images">
       <div className="images__carousel">
@@ -31,11 +30,13 @@ const MainDescriptionImages = ({ url, name }) => {
           responsive={responsive}
           infinite={true}
           className="owl-carousel owl-theme skill-slider">
-          {url.map((image) => (
-            <div className="item">
-              <img src={image} alt={name} />
-            </div>
-          ))}
+          {photos.photos.map((photo) => {
+            return (
+              <div className="item" key={photo}>
+                <img src={photo} alt="host" key={photo} />
+              </div>
+            );
+          })}
         </Carousel>
       </div>
     </div>

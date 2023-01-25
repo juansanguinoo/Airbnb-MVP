@@ -1,24 +1,50 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../assets/styles/HomeStyles/MainCards.css';
-import { Link } from 'react-router-dom';
 
-const MainCards = ({ id, image, name, price, location }) => {
+import hostContext from '../../context/host/hostContext';
+
+const MainCards = () => {
+  const navigate = useNavigate();
+  const HostContext = useContext(hostContext);
+  const { lodging, getAllHost } = HostContext;
+
+  useEffect(() => {
+    getAllHost();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleClick = (e) => {
+    navigate(`description-host?q=${e._id}`);
+  };
+
   return (
-    <div className="main__cards">
-      <div className="main__cards__image">
-        <Link to={`/description-host?q=${id}`}>
-          <img src={image} alt={name} />
-        </Link>
-      </div>
-      <div className="main__cards__description">
-        <div className="main__cards__description__name">
-          <h3>{location}</h3>
-        </div>
-        <div className="main__cards__description__price">
-          <Link to={`/description-host?q=${id}`}>{price}</Link>
-        </div>
-      </div>
-    </div>
+    <main className="cards__container">
+      {lodging &&
+        lodging.allHost.map((host) => {
+          return (
+            <div
+              className="cards"
+              key={host._id}
+              onClick={() => handleClick(host)}>
+              <div className="cards__image">
+                <img src={host.photos[0]} alt="host" />
+              </div>
+              <div className="cards__info">
+                <div className="info__title">
+                  <h3>{host.title}</h3>
+                </div>
+                <div className="info__description">
+                  <p>{host.description.substring(0, 70)}</p>
+                </div>
+                <div className="info__price">
+                  <p>$ {host.price} COP nigth</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+    </main>
   );
 };
 

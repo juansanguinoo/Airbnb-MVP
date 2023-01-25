@@ -1,0 +1,119 @@
+.propertyelements__container {
+  width: 100vw;
+  height: auto;
+
+  display: flex;
+}
+
+.propertyelements__title {
+  width: 50%;
+  height: calc(100vh - 180px);
+
+  background: rgb(66, 42, 157);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 42, 157, 1) 0%,
+    rgba(121, 30, 163, 1) 35%,
+    rgba(205, 36, 124, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.propertyelements__title h1 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.propertyelements__elements {
+  width: 50%;
+  height: calc(100vh - 180px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elements__container {
+  width: 90%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  width: 60%;
+  height: 80px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+}
+
+.info {
+  width: 100px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info p {
+  font-size: 16px;
+  font-family: 'Monserrat', sans-serif;
+}
+
+.counters__container {
+  width: 100px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counters__container button {
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.counters__container button:hover {
+  background-color: #e1e1e1;
+  border: 1px solid #000;
+}
+
+.counters__container p {
+  font-size: 16px;
+  font-family: 'Monserrat', sans-serif;
+}
+
+/************************ Media Queries ************************/
+
+@media screen and (max-width: 800px) {
+  .propertyelements__title {
+    display: none;
+  }
+
+  .propertyelements__elements {
+    width: 100%;
+  }
+
+  .elements__container {
+    width: 90%;
+  }
+}
